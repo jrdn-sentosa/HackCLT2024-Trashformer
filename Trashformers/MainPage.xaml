@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cv="clr-namespace:Camera.MAUI;assembly=Camera.MAUI"
+             x:Class="Trashformers.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Fill"
+            HorizontalOptions ="Fill">
+
+            <!--<cv: x:Name="camerCameraViewaView" WidthRequest="300" HeightRequest="300" 
+                           CamerasLoaded="cameraView_CamerasLoaded"/>-->
+
+            <Button
+                Text="Take a picture"
+                Clicked="TakePhoto"
+                HorizontalOptions="Center" />
+
+            <Image x:Name="myImage" 
+                BackgroundColor="Gray"
+                WidthRequest="300"
+                HeightRequest="300"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
